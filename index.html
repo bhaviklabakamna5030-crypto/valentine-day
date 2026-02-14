@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Mansi 💕 | Valentine's Day 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rose: #e8a0a0;
+      --rose-deep: #c75b5b;
+      --blush: #f8e1e1;
+      --gold: #d4a574;
+      --cream: #fff9f5;
+      --dark-rose: #8b3a3a;
+      --rose-petal: #e85a5a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(165deg, #0d0505 0%, #1a0a0a 25%, #2d1515 50%, #1a0a0a 75%, #0d0505 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--cream);
+    }
+
+    /* Floating hearts background */
+    .hearts-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 1.5rem;
+      opacity: 0.2;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 6s; }
+    .heart:nth-child(2) { left: 20%; animation-delay: 1s; animation-duration: 7s; }
+    .heart:nth-child(3) { left: 30%; animation-delay: 2s; animation-duration: 5s; }
+    .heart:nth-child(4) { left: 40%; animation-delay: 0.5s; animation-duration: 8s; }
+    .heart:nth-child(5) { left: 50%; animation-delay: 1.5s; animation-duration: 6s; }
+    .heart:nth-child(6) { left: 60%; animation-delay: 2.5s; animation-duration: 7s; }
+    .heart:nth-child(7) { left: 70%; animation-delay: 0.8s; animation-duration: 5s; }
+    .heart:nth-child(8) { left: 80%; animation-delay: 1.8s; animation-duration: 9s; }
+    .heart:nth-child(9) { left: 90%; animation-delay: 2.2s; animation-duration: 6s; }
+    .heart:nth-child(10) { left: 15%; top: 30%; animation-delay: 3s; }
+    .heart:nth-child(11) { left: 75%; top: 20%; animation-delay: 1.2s; }
+    .heart:nth-child(12) { left: 45%; top: 60%; animation-delay: 2s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.2; }
+      90% { opacity: 0.2; }
+      100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--rose) 0%, var(--gold) 50%, var(--rose-deep) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--blush);
+      opacity: 0.95;
+      font-weight: 500;
+    }
+
+    .hero .date {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--gold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* Proposal scene - Boy & Girl with roses */
+    .proposal-scene {
+      width: 100%;
+      max-width: 380px;
+      margin: 1.5rem auto 2rem;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    .proposal-scene svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 10px 25px rgba(0,0,0,0.3));
+    }
+
+    .proposal-scene .boy {
+      animation: gentleSway 3s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    .proposal-scene .girl {
+      animation: gentleSway 3s ease-in-out infinite 0.5s;
+      transform-origin: bottom center;
+    }
+
+    .proposal-scene .rose-boy,
+    .proposal-scene .rose-girl {
+      animation: offerRose 2.5s ease-in-out infinite;
+    }
+
+    .proposal-scene .rose-girl {
+      animation-delay: 0.3s;
+    }
+
+    .proposal-scene .heart-between {
+      animation: heartbeat 1.2s ease-in-out infinite;
+      transform-origin: center;
+    }
+
+    @keyframes gentleSway {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+
+    @keyframes offerRose {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-4px) scale(1.05); }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
+
+    /* Card */
+    .card {
+      background: linear-gradient(145deg, rgba(139, 58, 58, 0.3) 0%, rgba(26, 10, 10, 0.65) 100%);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(232, 160, 160, 0.25);
+      border-radius: 24px;
+      padding: clamp(2rem, 5vw, 3.5rem);
+      width: 100%;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 0 0 80px rgba(199, 91, 91, 0.12);
+      animation: fadeInUp 1.2s ease-out 0.4s both;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--rose), var(--gold), var(--rose), transparent);
+      opacity: 0.7;
+    }
+
+    .card::after {
+      content: '♥';
+      position: absolute;
+      bottom: 15px;
+      right: 25px;
+      font-size: 2rem;
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      color: var(--rose);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      line-height: 1.9;
+      color: var(--blush);
+      margin-bottom: 1rem;
+    }
+
+    .card .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4em;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    .card .signature {
+      text-align: right;
+      margin-top: 2rem;
+      font-style: italic;
+      color: var(--rose);
+      font-size: 1.1rem;
+    }
+
+    /* Big heart - click for confetti */
+    .heart-reveal {
+      margin-top: 2rem;
+      font-size: 3.5rem;
+      animation: heartbeat 1.2s ease-in-out infinite;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.95;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Confetti hearts on click */
+    .confetti-heart {
+      position: fixed;
+      pointer-events: none;
+      font-size: 1.5rem;
+      z-index: 1000;
+      animation: confettiFly 1.5s ease-out forwards;
+    }
+
+    @keyframes confettiFly {
+      0% { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); }
+      100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(0) rotate(720deg); }
+    }
+
+    /* One-time tap overlay to start music (only if autoplay blocked) */
+    .tap-to-start {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 5, 5, 0.85);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+    }
+
+    .tap-to-start.visible {
+      display: flex;
+    }
+
+    .tap-to-start p {
+      font-family: 'Quicksand', sans-serif;
+      color: var(--blush);
+      font-size: 1.1rem;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      max-width: 280px;
+    }
+
+    .tap-to-start span {
+      color: var(--rose);
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1rem; }
+      .card { padding: 1.75rem 1.25rem; }
+      .heart { font-size: 1rem; }
+      .proposal-scene { max-width: 320px; margin: 1rem auto 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true">
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+  </div>
+
+  <!-- Shown only when autoplay is blocked; one tap starts music and hides this -->
+  <div class="tap-to-start" id="tapOverlay" role="button" tabindex="0" aria-label="Tap to start music">
+    <p>Tap anywhere to start <span>I Love You</span> piano music ♪</p>
+  </div>
+
+  <div class="container">
+    <section class="hero">
+      <h1>Happy Valentine's Day</h1>
+      <p class="subtitle">To the one who makes every day special</p>
+      <p class="date">14 February 2026</p>
+    </section>
+
+    <!-- Boy & Girl – cute illustrated style, giving each other roses -->
+    <div class="proposal-scene" aria-hidden="true">
+      <svg viewBox="0 0 380 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Boy and girl giving each other roses">
+        <defs>
+          <linearGradient id="dressGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f0b4b4"/>
+            <stop offset="100%" stop-color="#d87070"/>
+          </linearGradient>
+          <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#b8d4e8"/>
+            <stop offset="100%" stop-color="#8bb8d8"/>
+          </linearGradient>
+          <linearGradient id="roseGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#a63d3d"/>
+            <stop offset="100%" stop-color="#e85a5a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- BOY (left) -->
+        <g class="boy" transform="translate(0, 0)">
+          <!-- Body – light blue shirt -->
+          <path d="M 95 88 L 85 188 L 155 188 L 145 88 Q 120 78 95 88 Z" fill="url(#shirtGrad)" stroke="#7aa0b8" stroke-width="1.5"/>
+          <!-- Collar -->
+          <path d="M 105 88 L 120 98 L 135 88" fill="#fff" opacity="0.6" stroke="#7aa0b8" stroke-width="0.5"/>
+          <!-- Arm with rose (behind body) -->
+          <path d="M 142 105 Q 175 100 195 92" stroke="#e8c4a0" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Head – face (skin) -->
+          <circle cx="120" cy="62" r="30" fill="#f0d4b8" stroke="#e0c4a8" stroke-width="1"/>
+          <!-- Boy hair – only on top/sides, not covering face -->
+          <path d="M 92 45 Q 88 55 92 68 L 95 72 L 148 72 L 152 68 Q 156 55 152 45 Q 122 32 92 45" fill="#3d2a1a"/>
+          <!-- Eyes -->
+          <ellipse cx="108" cy="58" rx="4" ry="5" fill="#2c1810"/>
+          <ellipse cx="132" cy="58" rx="4" ry="5" fill="#2c1810"/>
+          <!-- Smile -->
+          <path d="M 112 72 Q 120 80 128 72" stroke="#c49a6c" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Blush -->
+          <ellipse cx="98" cy="68" rx="6" ry="3" fill="#e8a090" opacity="0.4"/>
+          <ellipse cx="142" cy="68" rx="6" ry="3" fill="#e8a090" opacity="0.4"/>
+          <!-- Rose (boy offering to girl) -->
+          <g class="rose-boy" transform="translate(198, 88)">
+            <circle cx="0" cy="-2" r="16" fill="url(#roseGrad)"/>
+            <circle cx="7" cy="2" r="11" fill="#f07070"/>
+            <circle cx="-5" cy="0" r="10" fill="#e06060"/>
+            <rect x="-2.5" y="12" width="5" height="28" rx="2" fill="#2d6b2d"/>
+            <path d="M -5 28 L 0 38 L 5 28" fill="#2d6b2d"/>
+          </g>
+        </g>
+
+        <!-- GIRL (right) -->
+        <g class="girl" transform="translate(0, 0)">
+          <!-- Dress -->
+          <path d="M 262 88 L 232 188 L 332 188 L 302 88 Q 282 78 262 88 Z" fill="url(#dressGrad)" stroke="#c86868" stroke-width="1.5"/>
+          <!-- Arm with rose -->
+          <path d="M 238 105 Q 205 100 185 92" stroke="#fce4d8" stroke-width="12" stroke-linecap="round" fill="none"/>
+          <!-- Girl hair – on top and sides only, face fully visible -->
+          <path d="M 232 40 Q 228 52 232 68 L 235 75 L 288 75 L 292 68 Q 296 52 292 40 Q 260 28 232 40" fill="#2d1a0a"/>
+          <!-- Long hair flowing down behind shoulders -->
+          <path d="M 235 78 Q 220 120 225 188 L 238 188 Q 236 120 240 78" fill="#2d1a0a" opacity="0.95"/>
+          <path d="M 285 78 Q 300 120 295 188 L 282 188 Q 284 120 280 78" fill="#2d1a0a" opacity="0.95"/>
+          <!-- Head – face on top of hair -->
+          <circle cx="260" cy="62" r="30" fill="#fce4d8" stroke="#e8d0c4" stroke-width="1"/>
+          <!-- Eyes -->
+          <ellipse cx="248" cy="58" rx="4" ry="5" fill="#2c1810"/>
+          <ellipse cx="272" cy="58" rx="4" ry="5" fill="#2c1810"/>
+          <!-- Smile -->
+          <path d="M 252 72 Q 260 80 268 72" stroke="#d4a090" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <!-- Blush -->
+          <ellipse cx="238" cy="68" rx="6" ry="3" fill="#e8a090" opacity="0.5"/>
+          <ellipse cx="282" cy="68" rx="6" ry="3" fill="#e8a090" opacity="0.5"/>
+          <!-- Rose (girl offering to boy) -->
+          <g class="rose-girl" transform="translate(182, 88)">
+            <circle cx="0" cy="-2" r="16" fill="url(#roseGrad)"/>
+            <circle cx="-7" cy="2" r="11" fill="#f07070"/>
+            <circle cx="5" cy="0" r="10" fill="#e06060"/>
+            <rect x="-2.5" y="12" width="5" height="28" rx="2" fill="#2d6b2d"/>
+            <path d="M -5 28 L 0 38 L 5 28" fill="#2d6b2d"/>
+          </g>
+        </g>
+
+        <!-- Heart between them -->
+        <g class="heart-between" transform="translate(190, 118)">
+          <path d="M 0 14 C -14 -7 -28 5 -14 14 C 0 28 14 14 0 14 Z" fill="#e85a5a"/>
+          <path d="M 0 14 C 14 -7 28 5 14 14 C 0 28 -14 14 0 14 Z" fill="#e85a5a"/>
+        </g>
+
+        <text x="60" y="50" fill="#e8a0a0" opacity="0.8" font-size="20">♥</text>
+        <text x="318" y="50" fill="#e8a0a0" opacity="0.8" font-size="20">♥</text>
+      </svg>
+    </div>
+
+    <main class="card">
+      <h2>Dear Mansi 💕</h2>
+      <p>
+        From the moment you came into my life, everything has felt a little brighter.
+        Your smile, your laugh, the way you care—you make every ordinary moment feel
+        like a celebration.
+      </p>
+      <p>
+        Today is Valentine's Day, but with you, every day feels like one. Thank you
+        for being you, for being mine, and for making this journey so beautiful.
+      </p>
+      <p>
+        I love you, <span class="name">Mansi</span>, today and always. Here's to many
+        more Valentine's Days together. 💖
+      </p>
+      <p class="signature">With all my love, forever yours</p>
+    </main>
+
+    <div class="heart-reveal" id="bigHeart" title="Click for more love!">♥</div>
+  </div>
+
+  <!-- Romantic piano – auto-plays. Add love-song.mp3 in this folder for your own track. -->
+  <audio id="loveSong" loop preload="auto" autoplay>
+    <source src="music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/audio/2022/08/04/audio_3e7b2f2f2d.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/audio/2021/08/09/audio_657a1f6f2d.mp3" type="audio/mpeg">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById('loveSong');
+    const tapOverlay = document.getElementById('tapOverlay');
+    const bigHeart = document.getElementById('bigHeart');
+
+    // Auto-play as soon as page loads
+    function tryAutoPlay() {
+      const p = audio.play();
+      if (p && p.then) {
+        p.then(function() {
+          tapOverlay.classList.remove('visible');
+        }).catch(function() {
+          tapOverlay.classList.add('visible');
+        });
+      }
+    }
+
+    window.addEventListener('load', tryAutoPlay);
+    // Also try on first user interaction (if autoplay was blocked)
+    document.body.addEventListener('click', function startOnTap() {
+      if (audio.paused) {
+        audio.play().catch(function() {});
+        tapOverlay.classList.remove('visible');
+      }
+      document.body.removeEventListener('click', startOnTap);
+    }, { once: true });
+
+    tapOverlay.addEventListener('click', function() {
+      audio.play().catch(function() {});
+      tapOverlay.classList.remove('visible');
+    });
+
+    // Confetti hearts on big heart click
+    bigHeart.addEventListener('click', function(e) {
+      for (let i = 0; i < 12; i++) {
+        const heart = document.createElement('span');
+        heart.className = 'confetti-heart';
+        heart.textContent = '♥';
+        heart.style.left = e.clientX + 'px';
+        heart.style.top = e.clientY + 'px';
+        heart.style.setProperty('--tx', (Math.random() - 0.5) * 400 + 'px');
+        heart.style.setProperty('--ty', (Math.random() - 0.5) * 400 + 'px');
+        document.body.appendChild(heart);
+        setTimeout(function() { heart.remove(); }, 1500);
+      }
+    });
+  </script>
+</body>
+</html>
